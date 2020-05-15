@@ -1,0 +1,25 @@
+.btn
+    display: inline-block
+    padding: 0.75em 2.5em
+    text:
+        transform: uppercase
+        decoration: none
+
+.btn:not(:last-of-type)
+    margin-bottom: 0.6em
+
+.btn--primary
+    border: 2px solid $accent //to be the same width with other button
+    background: $accent
+    color: $text-inverse
+
+.btn--primary:hover, .btn--primary:focus
+    background: darken($accent, 15%)
+
+.btn--secondary
+    border: 2px solid $text-inverse
+    color: $text-inverse
+
+.btn--secondary:hover, .btn--secondary:focus
+    background: $text-inverse
+    color: $text-main
