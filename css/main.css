@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 /**
     * 1. Change the default font family in all browsers (opinionated).
     * 2. Correct the line height in all browsers.
@@ -6,6 +7,7 @@
  */
 /*===== Document =====*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+
 html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -31,7 +33,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -225,6 +227,9 @@ span {
 
 .hamburger.is-open::before {
   opacity: 0;
+
+.grid {
+  display: flex;
 }
 
 .main-header {
@@ -239,6 +244,10 @@ span {
   width: 25%;
   min-width: 10rem;
   max-width: 15rem;
+}
+
+.main-nav {
+  display: none;
 }
 
 .hero {
@@ -350,4 +359,7 @@ a {
   padding: 5em 0;
   background-blend-mode: multiply;
   color: white;
+
+.hero-img {
+  display: none;
 }
