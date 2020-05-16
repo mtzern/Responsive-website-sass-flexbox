@@ -1,26 +1,28 @@
 *, *::before, *::after
-    box-sizing: border-box
+  box-sizing: border-box
 
 body
-    color: $text-main
-    text-align: center
+  color: $text-main
+  text-align: center
 
 img
-    max-width: 100%
-    height: auto
+  max-width: 100%
+  height: auto
 
 .container
-    width: 95%
-    max-width: 1200px
-    margin: 0 auto
+  width: 90%
+  max-width: 1200px
+  margin: 0 auto
 
 .unstyled-list
-    margin: 0
-    padding: 0
-    list-style-type: none
+  margin: 0
+  padding: 0
+  list-style: none
 
 .lg-screen
-    display: none
+  display: none
+  @media(min-width: 725px)
+    display: block
 
 .bg-primary
     background: $main
